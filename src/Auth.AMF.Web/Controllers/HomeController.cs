@@ -1,4 +1,4 @@
-﻿using Auth.AMF.Web.Models;
+﻿using Auth.AMF.Web.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Diagnostics;

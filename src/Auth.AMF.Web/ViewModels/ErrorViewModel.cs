@@ -1,6 +1,6 @@
 using System;
 
-namespace Auth.AMF.Web.Models
+namespace Auth.AMF.Web.ViewModels
 {
     public class ErrorViewModel
     {
