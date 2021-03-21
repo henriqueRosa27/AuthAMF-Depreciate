@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2A3FE1A5-9F2A-41AC-9B80-E31A2DC39EA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{29B40996-FF81-4CD1-9DF2-6943BA77301B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{AE57CC5C-14D2-4E82-B745-4955A4C47E91}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{5184A08D-4B17-4BA8-8760-0655E8618711}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{E3B0489B-1D1A-4ACC-8A06-23BDE5AC3B8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth.AMF.Web", "src\Auth.AMF.Web\Auth.AMF.Web.csproj", "{E93B7504-FA15-4CBA-8B27-6CA3A464CCCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E93B7504-FA15-4CBA-8B27-6CA3A464CCCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E93B7504-FA15-4CBA-8B27-6CA3A464CCCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E93B7504-FA15-4CBA-8B27-6CA3A464CCCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E93B7504-FA15-4CBA-8B27-6CA3A464CCCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{29B40996-FF81-4CD1-9DF2-6943BA77301B} = {2A3FE1A5-9F2A-41AC-9B80-E31A2DC39EA2}
+		{AE57CC5C-14D2-4E82-B745-4955A4C47E91} = {2A3FE1A5-9F2A-41AC-9B80-E31A2DC39EA2}
+		{5184A08D-4B17-4BA8-8760-0655E8618711} = {2A3FE1A5-9F2A-41AC-9B80-E31A2DC39EA2}
+		{E3B0489B-1D1A-4ACC-8A06-23BDE5AC3B8B} = {2A3FE1A5-9F2A-41AC-9B80-E31A2DC39EA2}
+		{E93B7504-FA15-4CBA-8B27-6CA3A464CCCF} = {29B40996-FF81-4CD1-9DF2-6943BA77301B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9AB8B215-22D5-42DA-B89F-BFC7BD224BDF}
+	EndGlobalSection
+EndGlobal
