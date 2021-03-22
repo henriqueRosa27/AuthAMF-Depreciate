@@ -1,6 +1,4 @@
-using Auth.AMF.Web.Data;
-using Auth.AMF.Web.Extensions;
-using Auth.AMF.Web.Services;
+using Auth.AMF.Web.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -27,38 +25,14 @@ namespace Auth.AMF.Web
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            services.AddMvcConfiguration(Configuration);
 
-            services.AddScoped<IAccountService, AccountService>();
-            services.AddScoped<MongoContext>();
-
-            services.Configure<AppSettings>(Configuration);
+            services.RegisterServices();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-                app.UseHsts();
-            }
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
-
-            app.UseRouting();
-
-            app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-            });
+            app.UseMvcConfiguration(env);
         }
     }
 }
